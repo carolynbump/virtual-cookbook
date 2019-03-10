@@ -9,6 +9,8 @@
 /bower_components
 
 # misc
+.env*
+!.env.example
 /.sass-cache
 /connect.lock
 /coverage/*
