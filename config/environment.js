@@ -46,6 +46,11 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+  
+  ENV.apiHost = process.env.API_HOST;
+  ENV.apiNamespace = process.env.API_NAMESPACE;
+  ENV.apiFullPath = `${ENV.apiHost}/${ENV.apiNamespace}`;
+  ENV.apiAuthEndpoint = `${ENV.apiFullPath}/auth/sign_in`;
 
   return ENV;
 };

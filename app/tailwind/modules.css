@@ -30,3 +30,8 @@
 * box with Tailwind.
 */
 @import "./utilities/*.css";
+
+body {
+  font-family: "Avenir Next";
+  background-color: #e3f1f9;
+}

@@ -1,0 +1,15 @@
+.btn {
+  height: 50px;
+  width: 100%;
+}
+
+.btn-can-can {
+  @apply .btn .bg-can-can .font-bold .text-xl .text-white;
+  border: solid 1px #d98f9f;
+}
+
+.btn-can-can:disabled {
+  @apply bg-grey-light border-grey-light text-black;
+  cursor: not-allowed;
+}
+

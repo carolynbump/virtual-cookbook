@@ -1,0 +1,23 @@
+.login-container {
+  width: 600px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 170px;
+}
+
+.login-container-header {
+  display: flex;
+  height: 60px;
+  box-shadow: 0 2px 4px 0 rgba(107, 107, 107, 0.5);
+  border-bottom: none;
+  text-align: center;
+  border-bottom: solid 4px #80a2b4;
+  cursor: pointer;
+}
+
+.login-container-body {
+  @apply .p-10 .bg-white;
+  box-shadow: 0 2px 4px 0 rgba(107, 107, 107, 0.5);
+  border: solid 1px #ffffff;
+  border-top: none;
+}

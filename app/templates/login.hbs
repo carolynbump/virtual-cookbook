@@ -1,1 +1,31 @@
-{{outlet}}
+{{header-banner}}
+
+<div class="login-container">
+  <div class="login-container-header">
+    <div class="w-1/2 {{if model.newUser 'bg-white text-bali-hali' 'bg-bali-hali text-white'}}" {{action "chooseLogin"}}>
+      <h3 class="p-5">Login</h3>
+    </div>
+    <div class="w-1/2 {{if model.newUser 'bg-bali-hali text-white' 'bg-white text-bali-hali'}}" {{action "chooseSignUp"}}>
+      <h3 class="p-5">Sign Up</h3>
+    </div>
+  </div>
+  <div class="login-container-body">
+    <h3 class="mb-1">Email</h3>
+    {{input value=model.email class="mb-5"}}
+    <h3 class="mb-1">Password</h3>
+    {{input value=model.password keyUp=(action "updatePassword") class="mb-5"}}
+    
+    {{#if model.newUser}}
+      <h3 class="mb-1">Password Confirmation</h3>
+      {{input value=model.passwordConfirmation keyUp=(action "updatePassword") class="mb-5"}}
+    {{/if}}
+    
+    <button class="btn-can-can" {{action "authenticate" model}} disabled={{and (not model.isValid) model.newUser}}>
+      {{#if model.newUser}}
+        Sign Up
+      {{else}}
+        Sign In
+      {{/if}}
+    </button>
+  </div>
+</div>

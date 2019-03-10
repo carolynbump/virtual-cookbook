@@ -98,4 +98,11 @@ export default {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
+  
+  'bali-hali': '#80a2b4',
+  'sea-pink': '#E88993',
+  'can-can': '#D98F9F',
+  'morning-blue': '#9CCCDE',
+  'cape-code': '#3E4244',
+  'polar': '#e3f1f9'
 };
